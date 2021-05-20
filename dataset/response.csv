@@ -1,0 +1,76 @@
+response,labels
+"Hello, I'm sure you are interested in Data Science",14
+Happy to have you here,14
+Good to see you again,14
+"Hi there, how can I help?",14
+"Hi, I'm  DS Chatbot",16
+I'm ChatBot ,16
+Call me ChatBot,16
+Have a great learning!,9
+Have a nice learning time,9
+Enjoy the answers!,9
+Have fun with the learning,9
+Happy to help!,15
+Any time!,15
+My pleasure,15
+Do enjoy the game,15
+Have fun on learning,15
+"Sorry, kindly rephrase the question",7
+"Sorry, can't understand you",7
+Please give me more information,7
+Not sure I understand,7
+I can guide you through how to get started with Data Science,12
+"Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains",6
+"I know some key words like Machine Language, Deep Learning, AI and IOT to mention a few",6
+Ask me a question about Data Science and I will answer to the best of my knowledge,6
+"Here we plot each data point in n-dimensional space with the value of each dimension being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiate the classes very well",4
+"Kernel, Regularization, Gamma and Margin are the tuning paramers of SVM ",4
+"Kernel tricks are nothing but the transformations applied on input variables which separate non-separable data to separable data. There are 9 different kernel tricks. Examples are Linear, RBF, Polynomial, etc.",4
+"All the categorical variables have to be converted to numeric by creating dummy variables, as all the data points have to be plotted on n dimentional space, in addition to this we have tuning parameters like Kernel, Regularization, Gamma & Margin which are mathematical computations that require numeric variables. This is an assumption of SVM",4
+The value of Regularization parameter tells the training model as to how much it can avoid misclassifying each training observation,4
+"Gamma is the kernel coefficient in the kernel tricks RBF, Polynomial, & Sigmoid. Higher values will make the model more complex and overfits the model",4
+"Margin is the separation line to the closest class datapoints. Larger the margin width, better is the classification done. But before even achieving maximum margin, objective of the algorithm is to correctly classify datapoints",4
+kernlab is the package used in R for implementing SVM in R,4
+ksvm is the function in R to implement SVM in R,4
+Hinge Loss is a loss function which penalises the SVM model for inaccurate predictions,4
+"It is because of bottom up approach, where initially each observation is considered to be a single cluster and gradually based on the distance measure inidividual clusters will be paired and finally merged as one",0
+When the clusters are as much heterogenous as possible and when the observations within each cluster are as much homogenous as possible,0
+"None of your data science topics are domain specific. They can be employed in any domain, provided data is available",0
+"Using variables like income, education, profession, age, number of children, etc you come with different clusters and each cluster has people with similar socio-economic criteria",0
+It would be better if we employ clustering on normalized data as you will get different results for with and without normalization,0
+"Linkage is the criteria based on which distances between two clusters is computed. Single, Complete, Average are few of the examples for linkages Single -The distance between two clusters is defined as the shortest distance between two points in each cluster. Complete - The distance between two clusters is defined as the longest distance between two points in each cluster. Average - the distance between two clusters is defined as the average distance between each point in one cluster to every point in the other cluster",0
+In Hierarchial Clustering number of clusters will be decided only after looking at the dendrogram,0
+"After computing optimal clusters, aggregate measure like mean has to be computed on all variables and then resultant values for all the variables have to be interpreted among the clusters",0
+Theoretically it will be between - infinity to + inifinity but normally you have values between -3 to +3,5
+"Since the value of z-transform tends to infinity, the ROC of the z-transform does not contain poles, so the answer is True",5
+Data transformation consolidated or aggregate your data columns. It may impact your machine learning model performance,5
+0 to 1 is the range for this normalization technique,11
+"In Regression analysis, we need to convert all the categorical columns into binary variables. Such variables are known as dummy variables",11
+Heteroscedasticity is a situation where the variability of a variable is unequal across the range of values of a second variable that predicts it,11
+Multicollinearity is a high correlation among two or more predictor variables in a multiple regression model,11
+Degrees of freedom are the number of independent values that a statistical analysis can estimate.,8
+T Distribution or Student's T Distribution is employed when the Population Standard Deviation is unknonw and the sample size is less than 30,8
+It is the way of testing results of an experiment whether they are valid and meaningful and have not occured just by chance,10
+The ROC curve is a graphical representation of the contrast between true positive rates and the false positive rate at various thresholds,10
+Null Hypothesis is nothing but a statement which is usually true,10
+naive Bayes is so naive because it assumes that all of the features in a data set are equally important and independent,10
+Prior probability is the proportion of dependent variable in the data set,10
+Covariance is a measure to know how to variables change together,10
+A classification trees makes decision based on Gini Index and Node Entropy,10
+"KNN makes no assumptions about the underlying data unlike other algorithms, eg. Linear Regression",2
+There is no or minimal training phase because of which training phase is pretty fast. Here the training data is used during the testing phase,2
+"K value can be selected using sqrt(no. of obs/2), kselection package, scree plot, k fold cross validation",2
+knn() can be used from the class package,2
+Probability is given by Number of interested events divided by Total number of events,13
+ It is the probability of two events occuring at the same time. Classical example is probability of an email being spam with the word lottery in it. Here the events are email being spam and email having the word lottery,13
+"Bayesâ€™ Theorem finds the probability of an event occurring given the probability of another event that has already occurred. Mathematically it is given as P(A|B) = [P(B|A)P(A)]/P(B) where A & B are events. P(A|B) called as Posterior Probability, is the probability of event A(response) given that B(independent) has already occured. P(B|A) is the likelihood of the training data i.e., probability of event B(indpendent) given that A(response) has already occured. P(A) is the probability of the response variable and P(B) is the probability of the training data or evidence",3
+The fundamental assumption is that each indepedent variable independently and equally contributes to the outcome,3
+"Decision Tree is a superised machine learning algorithm used for classification and regression analysis. It is a tree-like structure in which internal node represents test on an attribute, each branch represents outcome of test and each leafe node represents class label",1
+A path from root node to leaf node represents classification rules,1
+"We have Root Node, Internal Node, Leaf Node in a decision tree. Decision Tree starts at the Root Node, this is the first node of the decision tree. Dta set is split based on Root Node, again nodes are selected to further split the already splitted data. This process of splitting the data goes on till we get leaf nodes, which are nothing but the classification labels. The process of selecting Root Nodes and Internal Nodes is done using the statistical measures called Gain",1
+We say a data set is pure or homogenous if all of it's class labels is the same and impure or hetergenous if the class labels are different. Entropy or Gini Index or Classification Error can be used to measure impurity of the data set,1
+ The process of removal of sub nodes which contribute less power to the decision tree model is called as Pruning,1
+"Pruning reduces the complexity of the model which in turn reduces overfitting problem of Decision Tree. There are two strategies in Pruning. Propruning - discard unreliable parts from the fully grown tree, Prepruning  stop growing a branch when the information becomes unreliable. Postpruning is the preferred one",1
+Entropy is a probabilistic measure of uncertainity or impurity whereas Information Gain is the reduction of this uncertainity measure,1
+"Gain for any column is calculated by differencing Information Gain of a dataset with respect to a variable from the Information Gain of the entire dataset i.e., Gain(Age) = Info(D) - Info(D wrt Age)",1
+C50 and tree packages can be used to implement a decision tree algorithm in R,1

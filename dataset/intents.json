@@ -1,0 +1,101 @@
+{"intents": [
+        {"tag": "start_conversation",
+         "patterns": ["Hi there", "Is anyone there?","Hey","Hola", "Hello", "Good day","Hi"],
+         "responses": ["Hello, I'm sure you are interested in Data Science", "Happy to have you here", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+	
+	{"tag": "what_are_you",
+         "patterns": ["What is your name?", "what are you?", "who are you?","your name pls?"],
+         "responses": ["Hi, I'm  DS Chatbot", "I'm ChatBot ", "Call me ChatBot"],
+         "context": [""]
+        },
+
+	 {"tag": "end_conversation",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["Have a great learning!", "Have a nice learning time", "Enjoy the answers!","Have fun with the learning"],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure","Do enjoy the game","Have fun on learning"],
+         "context": [""]
+        },
+        {"tag": "confused",
+         "patterns": [],
+         "responses": ["Sorry, kindly rephrase the question","Sorry, can't understand you", "Please give me more information", "Not sure I understand"],
+         "context": [""]
+        },
+	 {"tag": "options",
+         "patterns": ["How can you help me?", "What can you do?", "What help you provide?", "How can you be helpful?", "What support do you offered","What do you know?","what help?","What are you about?"],
+         "responses": ["I can guide you through how to get started with Data Science"],
+         "context": [""]
+        },
+  	{"tag": "bot_scope",
+         "patterns": ["What do you know about Data Science?", "Tell me about Data Science?", "Do you really know lots about Data Science?", "what exactly do you know about Data Science","what do you mean by guides through Data Science?"],
+         "responses": ["Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains","I know some key words like Machine Language, Deep Learning, AI and IOT to mention a few","Ask me a question about Data Science and I will answer to the best of my knowledge"],
+         "context": [""]
+        },
+
+	{"tag": "SVM",
+         "patterns": ["What is SVM?", "What are the tuning parameters of SVM?", "Explain Kernel in SVM?","Is there a need to convert categorical variables into numeric in SVM? If yes, explain", "What is Regularization in SVM?", "What is Gamma parameter in SVM?", "What do you mean by Margin in SVM?", "What is the SVM package used for SVM in R?", "What is the function name to implement SVM in R?", "What is Hinge Loss?" ],
+         "responses": ["Here we plot each data point in n-dimensional space with the value of each dimension being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiate the classes very well", "Kernel, Regularization, Gamma and Margin are the tuning paramers of SVM ", "Kernel tricks are nothing but the transformations applied on input variables which separate non-separable data to separable data. There are 9 different kernel tricks. Examples are Linear, RBF, Polynomial, etc.", "All the categorical variables have to be converted to numeric by creating dummy variables, as all the data points have to be plotted on n dimentional space, in addition to this we have tuning parameters like Kernel, Regularization, Gamma & Margin which are mathematical computations that require numeric variables. This is an assumption of SVM", "The value of Regularization parameter tells the training model as to how much it can avoid misclassifying each training observation", "Gamma is the kernel coefficient in the kernel tricks RBF, Polynomial, & Sigmoid. Higher values will make the model more complex and overfits the model", "Margin is the separation line to the closest class datapoints. Larger the margin width, better is the classification done. But before even achieving maximum margin, objective of the algorithm is to correctly classify datapoints", "kernlab is the package used in R for implementing SVM in R", "ksvm is the function in R to implement SVM in R", "Hinge Loss is a loss function which penalises the SVM model for inaccurate predictions"],
+         "context": [""]
+        },
+	
+	{"tag": "Clustering",
+	 "patterns": ["Why is hierarchial clustering called as Agglomerative clustering?", "When can you say that resultant clusters are good?", "In which domains can we employ clustering?", "Example of clustering?", "Is normalization of data required before applying clustering?", "What are linkages in hierarchial clustering?","How do we decide upon the number of clusters in hierarchial clustering?","How to interpret clustering output?"],
+	 "responses": ["It is because of bottom up approach, where initially each observation is considered to be a single cluster and gradually based on the distance measure inidividual clusters will be paired and finally merged as one", "When the clusters are as much heterogenous as possible and when the observations within each cluster are as much homogenous as possible", "None of your data science topics are domain specific. They can be employed in any domain, provided data is available","Using variables like income, education, profession, age, number of children, etc you come with different clusters and each cluster has people with similar socio-economic criteria","It would be better if we employ clustering on normalized data as you will get different results for with and without normalization","Linkage is the criteria based on which distances between two clusters is computed. Single, Complete, Average are few of the examples for linkages Single -The distance between two clusters is defined as the shortest distance between two points in each cluster. Complete - The distance between two clusters is defined as the longest distance between two points in each cluster. Average - the distance between two clusters is defined as the average distance between each point in one cluster to every point in the other cluster", "In Hierarchial Clustering number of clusters will be decided only after looking at the dendrogram", "After computing optimal clusters, aggregate measure like mean has to be computed on all variables and then resultant values for all the variables have to be interpreted among the clusters"],
+	 "context": [""]
+	},
+
+	{"tag": "Z_transformation",
+	 "patterns": ["What is the range of Z transformed variable?","The ROC of z-transform of any signal cannot contain poles, True or False?","What do you mean by data transformation?"],
+	 "responses": ["Theoretically it will be between - infinity to + inifinity but normally you have values between -3 to +3","Since the value of z-transform tends to infinity, the ROC of the z-transform does not contain poles, so the answer is True","Data transformation consolidated or aggregate your data columns. It may impact your machine learning model performance"],
+	 "context": [""]
+	},
+
+	{"tag": "normalization",
+	 "patterns": ["What is the range of variable when normalization technique is employed?","What are dummy variables?","What is heteroscedasticity?","What is multicollinearity?","What is multicollinearity test?","what do you understand by multicollinearity?","when to use multicollinearity?","how is multicollinearity?"],
+	 "responses": ["0 to 1 is the range for this normalization technique","In Regression analysis, we need to convert all the categorical columns into binary variables. Such variables are known as dummy variables","Heteroscedasticity is a situation where the variability of a variable is unequal across the range of values of a second variable that predicts it", "Multicollinearity is a high correlation among two or more predictor variables in a multiple regression model"],
+	 "context": [""]
+	},
+
+	{"tag": "distribution",
+	 "patterns": [" What do you mean by Degrees of Freedom?", "When do we go for T distribution?"],
+	 "responses": ["Degrees of freedom are the number of independent values that a statistical analysis can estimate.", "T Distribution or Student's T Distribution is employed when the Population Standard Deviation is unknonw and the sample size is less than 30"],
+	 "context": [""]
+	},
+
+	{"tag": "function",
+	 "patterns": ["What do you mean by Hypothesis Testing?", "What is Null Hypothesis in Hypothesis Testing?", "Explain how a ROC curve works?", "Why is naive Bayes so naive?", "What do you mean by Prior Probability?", "What is the difference between covariance and correlation?", "what is the difference between covariance and correlation?"],
+	 "responses": ["It is the way of testing results of an experiment whether they are valid and meaningful and have not occured just by chance", "The ROC curve is a graphical representation of the contrast between true positive rates and the false positive rate at various thresholds", "Null Hypothesis is nothing but a statement which is usually true", "naive Bayes is so naive because it assumes that all of the features in a data set are equally important and independent", "Prior probability is the proportion of dependent variable in the data set", "Covariance is a measure to know how to variables change together", "A classification trees makes decision based on Gini Index and Node Entropy"],
+	 "context": [""]
+	},
+
+	{"tag": "KNN",
+	 "patterns": ["Why is KNN called as non-parametric algorithm?", "Why is KNN called as Lazy Algorithm?", "How do we choose the value of K in KNN algorithm?", "Function in R to employ KNN?"],
+	 "responses": ["KNN makes no assumptions about the underlying data unlike other algorithms, eg. Linear Regression", "There is no or minimal training phase because of which training phase is pretty fast. Here the training data is used during the testing phase", "K value can be selected using sqrt(no. of obs/2), kselection package, scree plot, k fold cross validation", "knn() can be used from the class package"],
+	 "context": [""]
+	},
+
+	{"tag": "probability",
+	 "patterns": ["What is Probability?", "What is join probability?"],
+	 "responses": ["Probability is given by Number of interested events divided by Total number of events", " It is the probability of two events occuring at the same time. Classical example is probability of an email being spam with the word lottery in it. Here the events are email being spam and email having the word lottery"],
+	 "context": [""]
+	},
+
+	{"tag": "Naive_Bayes",
+	 "patterns": ["What is Bayes' Theorem?", "What is the assumption of Naive Bayes Classifier?"],
+	 "responses": ["Bayes’ Theorem finds the probability of an event occurring given the probability of another event that has already occurred. Mathematically it is given as P(A|B) = [P(B|A)P(A)]/P(B) where A & B are events. P(A|B) called as Posterior Probability, is the probability of event A(response) given that B(independent) has already occured. P(B|A) is the likelihood of the training data i.e., probability of event B(indpendent) given that A(response) has already occured. P(A) is the probability of the response variable and P(B) is the probability of the training data or evidence", "The fundamental assumption is that each indepedent variable independently and equally contributes to the outcome"],
+	 "context": [""]
+	},
+
+	{"tag": "Decision_tree",
+	 "patterns": ["What is a decision tree?", "What are rules in decision tree?", "Explain different types of nodes in decision tree and how are they selected?", "What do you mean by imurity in Decision Tree?", "What is Pruning in Decision Tree?", "What are the advantage of Pruning?", "What is the difference between Entropy and Information Gain?", "Explain the expression of Gain of any column?", "What is the package required to implement Decision Tree in R?"],
+	 "responses": ["Decision Tree is a superised machine learning algorithm used for classification and regression analysis. It is a tree-like structure in which internal node represents test on an attribute, each branch represents outcome of test and each leafe node represents class label", "A path from root node to leaf node represents classification rules", "We have Root Node, Internal Node, Leaf Node in a decision tree. Decision Tree starts at the Root Node, this is the first node of the decision tree. Dta set is split based on Root Node, again nodes are selected to further split the already splitted data. This process of splitting the data goes on till we get leaf nodes, which are nothing but the classification labels. The process of selecting Root Nodes and Internal Nodes is done using the statistical measures called Gain", "We say a data set is pure or homogenous if all of it's class labels is the same and impure or hetergenous if the class labels are different. Entropy or Gini Index or Classification Error can be used to measure impurity of the data set", " The process of removal of sub nodes which contribute less power to the decision tree model is called as Pruning", "Pruning reduces the complexity of the model which in turn reduces overfitting problem of Decision Tree. There are two strategies in Pruning. Propruning - discard unreliable parts from the fully grown tree, Prepruning  stop growing a branch when the information becomes unreliable. Postpruning is the preferred one", "Entropy is a probabilistic measure of uncertainity or impurity whereas Information Gain is the reduction of this uncertainity measure", "Gain for any column is calculated by differencing Information Gain of a dataset with respect to a variable from the Information Gain of the entire dataset i.e., Gain(Age) = Info(D) - Info(D wrt Age)", "C50 and tree packages can be used to implement a decision tree algorithm in R"],
+	 "context": [""]
+	}
+       
+   ]
+}
